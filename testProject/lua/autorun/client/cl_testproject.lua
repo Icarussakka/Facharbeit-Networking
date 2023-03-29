@@ -1,8 +1,12 @@
+// Simple Datentypen Networken
+
 local myInt = 24
 
 net.Start("TestProject.MyInt")
     net.WriteInt(myInt, 32)
 net.SendToServer()
+
+// Kommunikation sichern
 
 hook.Add("OnPlayerChat", "TestProject.SecureNet", function(ply, text)
     if text:StartWith("!wep") then
