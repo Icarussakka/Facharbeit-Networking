@@ -22,6 +22,9 @@ net.Receive("TestProject.Weapon", function(len, ply)
 end)
 
 
+// Kommunikation Optimieren
+
+
 local characters = {
     ["PLAYER01"] = {
         name = "Player 1",
